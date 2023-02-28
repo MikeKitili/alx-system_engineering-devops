@@ -15,7 +15,8 @@ def number_of_subscribers(subreddit):
     """
     # Set the Default URL strings
     base_url = 'https://www.reddit.com'
-    api_uri = '{base}/r/{subreddit}/about.json'.format(base=base_url, subreddit=subreddit)
+    api_uri = '{base}/r/{subreddit}/about.json'.format(base=base_url,
+                                                       subreddit=subreddit)
 
     # Set an User-Agent
     user_agent = {'User-Agent': 'Python/requests'}
